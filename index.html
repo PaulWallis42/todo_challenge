@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <title>To Do List</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/stylesheet.css">
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
   </head>
 
   <body>
-    <div>
+    <div id="add_task_styling">
       <form class="form-horizontal">
         <input type="text" placeholder="Task Description">
+        <button class="btn btn-primary btn-xsm">Add Task</button>
       </form>
-      <button type="button">Add Task</button>
-      <button type="button">All</button>
-      <button type="button">Active</button>
-      <button type="button">Complete</button>
-      <button type="button">Clear All</button>
     </div>
+    <div id="command_buttons">
+      <button class="btn btn-info btn-xsm">All</button>
+      <button class="btn btn-warning btn-xsm">Active</button>
+      <button class="btn btn-success btn-xsm">Complete</button>
+      <button class="btn btn-danger btn-xsm">Clear All</button>
+    <div>
   </body>
 </html>

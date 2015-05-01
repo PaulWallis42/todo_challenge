@@ -1,0 +1,24 @@
+body {
+  background-color: gray;
+}
+
+#add_task_styling {
+  margin-left: auto;
+  margin-right: auto;
+  top: 10;
+  position: fixed;
+  border: black;
+  border-style: solid;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  left: 40%;
+  top: 30%;
+}
+
+#command_buttons {
+position: fixed;
+left: 40.3%;
+top: 40%;
+
+}
