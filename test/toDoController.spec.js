@@ -27,6 +27,14 @@ describe('ToDoListController', function() {
     expect(ctrl.completedItems).toEqual(['Collect Dry Cleaning']);
   });
 
+  it('can move a specific item from ToDo to Complete', function(){
+    ctrl.addItem('Collect Dry Cleaning');
+    ctrl.addItem('Buy Milk');
+    ctrl.addItem('Drop Kids at School');
+    ctrl.itemCompleted('Drop Kids at School');
+    expect(ctrl.outstandingItems).toEqual(['Collect Dry Cleaning', 'Buy Milk']);
+    expect(ctrl.completedItems).toEqual(['Drop Kids at School']);
+  });
 
 
 

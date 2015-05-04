@@ -9,9 +9,10 @@ toDoList.controller('ToDoListController', [function(){
     self.outstandingItems.push(item);
   };
 
-  self.itemCompleted = function(){
-    self.completedItems.push(self.outstandingItems[0]);
-    self.outstandingItems.splice(0, 1);
+  self.itemCompleted = function(item){
+  var index = self.outstandingItems.indexOf(item)
+  self.completedItems.push(self.outstandingItems[index]);
+  self.outstandingItems.splice(index, 1)
   };
 
 
