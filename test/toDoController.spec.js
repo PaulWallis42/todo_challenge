@@ -36,7 +36,4 @@ describe('ToDoListController', function() {
     expect(ctrl.completedItems).toEqual(['Drop Kids at School']);
   });
 
-
-
-
 });

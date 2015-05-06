@@ -15,18 +15,14 @@
   <body ng-controller="ToDoListController as tdCtrl">
     <div id="add_task_styling">
       <form class="form-horizontal">
-        <input type="text" placeholder="Task Description">
-        <button class="btn btn-link btn-xsm">Click to Add Task</button>
-        <br>
-        <br>
-        <input type="radio" name="to do" value="to do list item"> This will be an item
-        <br>
-        <input type="radio" name="to do" value="to do list item"> This will be an item
-        <br>
-        <input type="radio" name="to do" value="to do list item"> This will be an item
-        <br>
-        <input type="radio" name="to do" value="to do list item"> This will be an item
+        <input ng-model="tdCtrl.newItem" type="text" placeholder="Task Description">
+        <button ng-click="tdCtrl.addItem()" class="btn btn-link btn-xsm">Click to Add Task</button>
       </form>
+      <ul class="list-group" ng-repeat="item in tdCtrl.outstandingItems">
+        <li>
+          {{item}}
+        </li>
+      </ul>
       <br>
       <button class="btn btn-info btn-xsm">All</button>
       <button class="btn btn-warning btn-xsm">Active</button>
